@@ -1,0 +1,47 @@
+[project]
+name = "myunits"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+license = "MIT"
+authors = [
+    { name = "Diogo Rossi", email = "rossi.diogo@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.9.24,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "black>=26.3.1",
+    "taskipy>=1.14.1",
+]
+test = [
+    "pytest>=9.0.2",
+]
+
+[project.urls]
+Documentation = "https://myunits.readthedocs.io/en/latest/"
+Issues = "https://github.com/diogo-rossi/myunits/issues"
+Source = "https://github.com/diogo-rossi/myunits"
+
+[tool.pytest]
+addopts = [
+    "-rx",        # Show extra test summary (r): (x)failed
+    "-vv",        # Increase verbosity
+    "-s",         # Shortcut for --capture=no (Per-test capturing method)
+    "--tb=short", # Traceback print mode = short
+]
+
+[tool.black]
+line-length = 128
+
+[tool.taskipy.tasks]
+docs = { cmd = "make html", cwd = "./doc/sphinx", help = "Make docs with sphinx in folder './doc/sphinx'" }
+open = { cmd = "index.html", cwd = "./doc/sphinx/build/html", help = "Open sphinx docs in folder './doc/sphinx/build/html'" }
+test = { cmd = "pytest", cwd = "./tests", help = "Test with pytest in folder './tests'" }
+build = { cmd = "uv build", cwd = ".", help = "Build package" }
+publish = { cmd = "pyprj publish", cwd = ".", help = "Publish package to PyPI" }
