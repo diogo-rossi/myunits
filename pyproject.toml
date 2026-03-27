@@ -1,7 +1,7 @@
 [project]
 name = "myunits"
 version = "0.1.0"
-description = "Add your description here"
+description = "A simple module with a selection of units to simple conversions, using library Pint."
 readme = "README.md"
 license = "MIT"
 authors = [

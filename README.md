@@ -3,7 +3,8 @@
 [![PyPI - Version](https://img.shields.io/pypi/v/myunits.svg)](https://pypi.org/project/myunits)
 [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/myunits.svg)](https://pypi.org/project/myunits)
 
-Description of the package.
+A simple module with a selection of units to simple conversions, using library
+[`pint`](https://pypi.org/project/Pint/)
 
 ## Installation
 
