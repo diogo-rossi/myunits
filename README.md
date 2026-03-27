@@ -11,6 +11,8 @@ Description of the package.
 pip install myunits
 ```
 
+## Usage
+
 ## License
 
 `myunits` is distributed under the terms of the
