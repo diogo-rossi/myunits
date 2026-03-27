@@ -9,6 +9,9 @@ authors = [
 ]
 requires-python = ">=3.12"
 dependencies = ["pint==0.25.3"]
+classifiers = [
+    "Programming Language :: Python :: 3.12",
+]
 
 [build-system]
 requires = ["uv_build==0.9.24,<0.10.0"]
