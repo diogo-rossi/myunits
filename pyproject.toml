@@ -8,7 +8,9 @@ authors = [
     { name = "Diogo Rossi", email = "rossi.diogo@gmail.com" }
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pint>=0.25.3",
+]
 
 [build-system]
 requires = ["uv_build>=0.9.24,<0.10.0"]
