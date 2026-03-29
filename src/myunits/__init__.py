@@ -6,6 +6,7 @@ ureg = UnitRegistry()
 # Mass
 kg = ureg.kg
 g = ureg.g
+mg = ureg.mg
 
 # Time
 d = ureg.d
