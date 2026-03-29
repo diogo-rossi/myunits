@@ -30,6 +30,14 @@ GPa = ureg.GPa
 psi = ureg.psi
 bar = ureg.bar
 
+# Compressibility
+sip = ureg.psi**-1
+rab = ureg.bar**-1
+microsip = 1e-6 * sip
+microrab = 1e-6 * rab
+usip = microsip
+urab = microrab
+
 # Temperature
 K = ureg.kelvin
 R = ureg.rankine
@@ -55,4 +63,10 @@ cP = ureg.cP
 
 # Energy
 J = ureg.J
+kJ = ureg.kJ
+MJ = ureg.MJ
+GJ = ureg.GJ
 W = ureg.W
+kW = ureg.kW
+MW = ureg.MW
+GW = ureg.GW
