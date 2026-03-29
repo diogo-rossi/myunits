@@ -31,10 +31,10 @@ psi = ureg.psi
 bar = ureg.bar
 
 # Compressibility
-sip = ureg.psi**-1
-rab = ureg.bar**-1
-microsip = 1e-6 * sip
-microrab = 1e-6 * rab
+sip = 1.0 / ureg.psi
+rab = 1.0 / ureg.bar
+microsip = sip / 1e6
+microrab = rab / 1e6
 usip = microsip
 urab = microrab
 
