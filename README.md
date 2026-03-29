@@ -40,6 +40,7 @@ The defined units are:
 
 - `kg` = kilogram
 - `g` = gram
+- `mg` = milligram
 - `d` = day
 - `s` = second
 - `us` = microsecond
@@ -55,6 +56,12 @@ The defined units are:
 - `GPa` = gigaPascal
 - `psi` = pound_force_per_square_inch
 - `bar` = bar
+- `sip` = 1.0 / pound_force_per_square_inch
+- `rab` = 1.0 / bar
+- `microsip` = 1e-06 / pound_force_per_square_inch
+- `microrab` = 1e-06 / bar
+- `usip` = 1e-06 / pound_force_per_square_inch
+- `urab` = 1e-06 / bar
 - `K` = Kelvin
 - `R` = degree_Rankine
 - `oC` = degree_Celsius
@@ -70,7 +77,13 @@ The defined units are:
 - `P` = Poise
 - `cP` = centiPoise
 - `J` = Joule
+- `kJ` = kiloJoule
+- `MJ` = megaJoule
+- `GJ` = gigaJoule
 - `W` = Watt
+- `kW` = kiloWatt
+- `MW` = megaWatt
+- `GW` = gigaWatt
 
 ## License
 
