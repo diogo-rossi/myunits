@@ -12,6 +12,7 @@ lbm = ureg.lb
 
 # Time
 d = ureg.d
+h = ureg.h
 s = ureg.s
 us = ureg.us
 
