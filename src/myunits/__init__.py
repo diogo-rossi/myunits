@@ -7,6 +7,8 @@ ureg = UnitRegistry()
 kg = ureg.kg
 g = ureg.g
 mg = ureg.mg
+lb = ureg.lb
+lbm = ureg.lb
 
 # Time
 d = ureg.d
@@ -52,6 +54,7 @@ daN = ureg.daN
 kN = ureg.kN
 MN = ureg.MN
 GN = ureg.GN
+lbf = ureg.lbf
 
 # Permeability
 D = ureg.darcy
