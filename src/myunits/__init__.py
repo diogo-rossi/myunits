@@ -120,3 +120,43 @@ def GPa_to_psi(value):
 def psi_to_bar(value):
     """Convert psi to bar."""
     return (value * psi).to(bar)
+
+
+def sip_to_1_per_Pa(value):
+    """Convert 1/psi to 1/Pa."""
+    return (value * sip).to(1 / Pa)
+
+
+def sip_to_1_per_kPa(value):
+    """Convert 1/psi to 1/kPa."""
+    return (value * sip).to(1 / kPa)
+
+
+def sip_to_1_per_MPa(value):
+    """Convert 1/psi to 1/MPa."""
+    return (value * sip).to(1 / MPa)
+
+
+def sip_to_1_per_GPa(value):
+    """Convert 1/psi to 1/GPa."""
+    return (value * sip).to(1 / GPa)
+
+
+def usip_to_1_per_Pa(value):
+    """Convert 1/usip to 1/Pa."""
+    return (value * usip).to(1 / Pa)
+
+
+def usip_to_1_per_kPa(value):
+    """Convert 1/usip to 1/kPa."""
+    return (value * usip).to(1 / kPa)
+
+
+def usip_to_1_per_MPa(value):
+    """Convert 1/usip to 1/MPa."""
+    return (value * usip).to(1 / MPa)
+
+
+def usip_to_1_per_GPa(value):
+    """Convert 1/usip to 1/GPa."""
+    return (value * usip).to(1 / GPa)
