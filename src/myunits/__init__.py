@@ -11,9 +11,12 @@ lb = ureg.lb
 lbm = ureg.lb
 
 # Time
+year = ureg.year
 d = ureg.d
 h = ureg.h
+minute = ureg.minute
 s = ureg.s
+ms = ureg.ms
 us = ureg.us
 
 # Distance
@@ -76,6 +79,14 @@ kW = ureg.kW
 MW = ureg.MW
 GW = ureg.GW
 
+# %%          CONVERSIONS
+############# CONVERSIONS #########################################################################
+
+
+#####################################################################################
+# %           Pressure
+####################################################################################
+
 
 def psi_to_Pa(value):
     """Convert psi to Pa."""
@@ -122,6 +133,11 @@ def psi_to_bar(value):
     return (value * psi).to(bar)
 
 
+#####################################################################################
+# %           Compressibility
+####################################################################################
+
+
 def sip_to_1_per_Pa(value):
     """Convert 1/psi to 1/Pa."""
     return (value * sip).to(1 / Pa)
@@ -160,3 +176,53 @@ def usip_to_1_per_MPa(value):
 def usip_to_1_per_GPa(value):
     """Convert 1/usip to 1/GPa."""
     return (value * usip).to(1 / GPa)
+
+
+#####################################################################################
+# %           Time
+####################################################################################
+
+
+def s_to_year(value):
+    """Convert seconds to years."""
+    return (value * s).to(year)
+
+
+def s_to_d(value):
+    """Convert seconds to days."""
+    return (value * s).to(d)
+
+
+def s_to_h(value):
+    """Convert seconds to hours."""
+    return (value * s).to(h)
+
+
+def s_to_minute(value):
+    """Convert seconds to minutes."""
+    return (value * s).to(minute)
+
+
+def s_to_ms(value):
+    """Convert seconds to milliseconds."""
+    return (value * s).to(ms)
+
+
+def s_to_us(value):
+    """Convert seconds to microseconds."""
+    return (value * s).to(us)
+
+
+def year_to_s(value):
+    """Convert years to seconds."""
+    return (value * year).to(s)
+
+
+def d_to_s(value):
+    """Convert days to seconds."""
+    return (value * d).to(s)
+
+
+def h_to_s(value):
+    """Convert hours to seconds."""
+    return (value * h).to(s)
