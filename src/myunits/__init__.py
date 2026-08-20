@@ -87,7 +87,7 @@ GW = ureg.GW
 
 #####################################################################################
 # %           Pressure
-####################################################################################
+#####################################################################################
 
 
 def psi_to_Pa(value):
@@ -137,7 +137,7 @@ def psi_to_bar(value):
 
 #####################################################################################
 # %           Compressibility
-####################################################################################
+#####################################################################################
 
 
 def sip_to_1_per_Pa(value):
@@ -182,7 +182,7 @@ def usip_to_1_per_GPa(value):
 
 #####################################################################################
 # %           Time
-####################################################################################
+#####################################################################################
 
 
 def s_to_year(value):
@@ -233,3 +233,48 @@ def h_to_s(value):
 def min_to_h(value):
     """Convert minutes to hours."""
     return (value * minute).to(h)
+
+
+#####################################################################################
+# %           Compressibility
+#####################################################################################
+
+
+def perMPa_to_perPa(value):
+    """Convert 1/MPa to 1/Pa."""
+    return (value * (1 / MPa)).to(1 / Pa)
+
+
+def perGPa_to_perPa(value):
+    """Convert 1/GPa to 1/Pa."""
+    return (value * (1 / GPa)).to(1 / Pa)
+
+
+def perGPa_to_perMPa(value):
+    """Convert 1/GPa to 1/MPa."""
+    return (value * (1 / GPa)).to(1 / MPa)
+
+
+def perGPa_to_perkPa(value):
+    """Convert 1/GPa to 1/kPa."""
+    return (value * (1 / GPa)).to(1 / kPa)
+
+
+def perGPa_to_perpsi(value):
+    """Convert 1/GPa to 1/psi."""
+    return (value * (1 / GPa)).to(1 / psi)
+
+
+def perGPa_to_perbar(value):
+    """Convert 1/GPa to 1/bar."""
+    return (value * (1 / GPa)).to(1 / bar)
+
+
+def perGPa_to_perusip(value):
+    """Convert 1/GPa to 1/usip."""
+    return (value * (1 / GPa)).to(1 / usip)
+
+
+def perGPa_to_cm2perkgf(value):
+    """Convert 1/GPa to cm²/kgf."""
+    return (value * (1 / GPa)).to(cm**2 / kgf)
