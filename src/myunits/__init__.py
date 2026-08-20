@@ -17,6 +17,7 @@ year = ureg.year
 d = ureg.d
 h = ureg.h
 minute = ureg.minute
+minutes = ureg.minute
 s = ureg.s
 ms = ureg.ms
 us = ureg.us
@@ -228,3 +229,8 @@ def d_to_s(value):
 def h_to_s(value):
     """Convert hours to seconds."""
     return (value * h).to(s)
+
+
+def min_to_h(value):
+    """Convert minutes to hours."""
+    return (value * minute).to(h)
