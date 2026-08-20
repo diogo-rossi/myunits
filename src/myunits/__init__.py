@@ -1,5 +1,4 @@
-__version__ = "0.8.0"
-# units
+__version__ = "0.9.0"# units
 from pint import UnitRegistry
 
 ureg = UnitRegistry()
