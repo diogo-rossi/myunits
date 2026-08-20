@@ -1,3 +1,5 @@
+__version__ = "0.7.0"
+
 # units
 from pint import UnitRegistry
 
