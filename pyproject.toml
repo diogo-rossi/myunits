@@ -8,7 +8,7 @@ authors = [
     { name = "Diogo Rossi", email = "rossi.diogo@gmail.com" },
 ]
 requires-python = ">=3.12"
-dependencies = ["pint==0.25.3"]
+dependencies = ["pint==0.26.1"]
 classifiers = [
     "Programming Language :: Python :: 3.12",
 ]
